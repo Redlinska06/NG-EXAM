@@ -1,0 +1,11 @@
+.ul {
+  list-style-type: none;
+}
+
+.button {
+  width: 250px;
+  height: 30px;
+  margin: 0;
+  box-sizing: border-box;
+  margin: 20px;
+}

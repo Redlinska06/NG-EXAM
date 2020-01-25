@@ -1,0 +1,9 @@
+<ul class="ul">
+  <li *ngFor="let item of news | sortByVotes; let i = index">
+    <app-news-item [news]="item" [index]="i"> </app-news-item>
+  </li>
+</ul>
+
+<button class="button" (click)="initializeNews()" *ngIf="news?.length <= 0">
+  Initiate
+</button>

@@ -1,0 +1,25 @@
+<div class="container">
+  <label>
+    Title:
+    <input class="input" [(ngModel)]="title" type="text" />
+  </label>
+  <br />
+  <label>
+    Image URL:
+    <input class="input" type="text" [(ngModel)]="imageUrl" />
+  </label>
+  <br />
+  <label>
+    Content:
+  </label>
+  <br />
+  <textarea class="textarea" [(ngModel)]="content"></textarea>
+  <br />
+  <button
+    class="button"
+    (click)="addNews()"
+    [disabled]="!title || !imageUrl || !content"
+  >
+    Add news
+  </button>
+</div>
